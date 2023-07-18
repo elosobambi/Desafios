@@ -3,9 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Desafío 3</title>
+    <style>
+        button{
+            width: 300px;
+            height: 50px;
+            margin-bottom: 10px;
+            font-size: 27px;
+            font-family: roboto;
+            background-color: #0a2ff1;
+            color: white;
+        }
+        footer{
+            min-height: 20px;
+            width: 100%;
+            background-color: #15163d;
+        }
+        .fondoArriba{
+            background-size: contain;
+            display: block;
+            margin: auto;
+            background-image: url(./Recursos/M4\ -\ Desafío3_img-header.png);
+            background-position: center;
+        }
+        main{
+            margin: auto;
+            width: 80%;
+            padding: 10px;
+            display: block;
+            margin-left: 25vh;
+            margin-right: 25vh;
+        }
+        h1{
+            font-size: 59px;
+            text-align: center;
+            font-family: roboto slab;
+            color: #0a2ff1;
+        }
+        p{
+           font-size: 25px;
+           font-family: roboto; 
+           color: black;
+
+        }
+        #subtitulo{
+            font-weight: bold;
+        }
+        #pregunta{
+            font-size: 24px;
+        }
+        #imagen2{
+            size: 15vh;
+            height: 15vh;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="fondoArriba">
+    </div>
+        <div>
+            <img src="./Recursos/M4 - Desafío3_img-header.png" alt="fondoArriba" class="fondoArriba">
+        </div>
+        <h1>Lettering: ¿Qué es y por dónde empezar?</h1>
+    <main>
+        <p>Lettering es el arte de dibujar letras como si fuesen formas o símbolos y permite <br>
+        combinar diferentes estilos, tamaños y colores. También modificar y redibujar letras <br>
+        enteras o por partes, agregar o quitar detalles y crear palabras y frases de manera <br>
+        totalmente libre, creativa e infinita.</p>
+
+        <p><span id="subtitulo">Lettering 2.0</span>
+        El lettering nació como una técnica analógica pero con las herramientas actuales <br>
+        también puedes desarrollarlo de manera digital, algunos de las apps para hacer <br>
+        lettering que te pueden funcionar muy bien por sus pinceles son Adobe Fresco o <br>
+        incluso algunos artistas digitales usan Photoshop o Illustrator en el iPad.</p>
+
+        <p>Las posibilidades son ilimitadas y por supuesto, si lo haces primero en papel, <br>
+        luego puedes digitalizar todos tus trabajos para incluirlos donde quieras.</p>
+
+        <div>
+            <img src="./Recursos/M4-Desafio3-lettering.jpg" alt="imagen2" id="imagen2">
+        </div>    
+
+        <p><span id="pregunta">¿Te interesó la nota? Hacé click para conocer más:</span></p>
+
+        <button>Contacto</button>
+    </main>
 </body>
+
+<footer>
+    <div></div>
+</footer>
 </html>
