@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>"Laboratorio 1</title>
+    <style>
+        .barra{
+            display: flex;
+            padding-left: 10px;
+        }
+        #logo{
+            width: 5vh;
+        }
+        #navegador{
+            padding-left: 25px;
+            font-size: 24px;
+            color: #04146c;
+        }
+        .activo {
+            font-weight: bold;
+        }
+        h1{
+            text-align: center;
+            font-family: roboto slab;
+            font-size: 96px;
+            color: #0a2ff1;
+        }
+        p{
+            text-align: center;
+            font-family: roboto;
+            font-size: 35px;
+            color: #04146c;
+        }   
+    </style>
 </head>
 <body>
-    
+    <nav class="barra">
+        <img src="./Recursos/M5-logo-azul.svg" alt="logo" class="barra" id="logo">
+        <p class="activo" id ="navegador">HOME</p>
+        <p id ="navegador">CONTACTO</p>
+    </nav>
+    <h1>¡Simple, rápido y confiable!</h1>
+    <p>Elegí tu plan de Alojamiento Web sin Impuestos Extra. Facturación en Pesos.</p>
+
 </body>
 </html>
