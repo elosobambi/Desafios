@@ -3,9 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>o Ejercicio 1</title>
+    <style>
+        @font-face {
+            font-family: coolvetica;
+            src: url(./Recursos/coolvetica\ rg.otf);
+        }
+        @font-face {
+            font-family: robotoLigth;
+            src: url(./Recursos/Roboto-Light.ttf);
+        }
+        h1{
+            font-family: Coolvetica;
+            font-size: 120px;
+            color: #0a2ff1;
+        }
+        #centrado{
+            text-align: center;
+        }
+        .botones{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .botones button{
+            margin-bottom: 10px;
+        }
+        #centrado p{
+            font-family: robotoLigth;
+            font-size: 40px;
+            color: #04146c;
+        }
+        #botonAzul{
+            font-size: 40px;
+            background-color: #0a2ff1;
+            font-family: roboto;
+            color: white;
+            border: 3px solid #0a2ff1;
+            width: 43vh;
+        }
+        #botonBlanco{
+            font-size: 40px;
+            font-family: roboto;
+            border: 3px solid #0a2ff1;
+            width: 43vh;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="centrado">
+        <h1>Conoce Coolorist</h1>
+        <p>Crea tu paleta perfecta o inspírate con miles <br>
+        de hermosos esquemas de color.</p>
+
+        <div class="botones">
+            <button id="botonAzul">¡Prueba el generador!</button>
+            <button id="botonBlanco">Explora otras paletas</button>
+        </div>
+    </div>
+
 </body>
 </html>
