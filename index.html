@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Desafío 1</title>
+    <style>
+        #formulario{
+            padding: 20px;
+            background-image: url(./Recursos/M4-desafio1-fondo-form.png);
+            width: 600px;
+            height: 400px;
+        }
+        #contenedorPadre{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items:  center;
+        }
+        #body{
+            background-image: url(./Recursos/M4-desafio1-fondo.png);
+        }
+        .camposFormulario{
+            box-sizing: border-box;
+            width: 500px;
+            height: 50px;
+            margin: 5px;
+        }
+        
+        #blanco{
+            background-color: white;
+            text-align: center;
+            padding-bottom: 90px;
+            padding-top: 45px;
+        }
+        button{
+            background-color: #15163d;
+            color: white;
+            font-size: 23px;
+            font-family: mulish;
+            font-weight: 600;
+        }
+        input{
+            font-size: 23px;
+            font-family: mulish;
+            padding-left: 8px; 
+            color: #414166;
+        }
+        h1{
+            font-family: mulish;
+            font-size: 33px;
+            color: #04146c;
+            font-weight: bold;
+        }
+
+    </style>
 </head>
-<body>
-    
+<body id="body">
+<div id="contenedorPadre">
+    <form action="Put" id="formulario">
+        <div id="blanco">
+            <h1>Iniciar Sesión</h1>
+            <input type="text" placeholder="Usuario" class="camposFormulario"><br>
+            <input type="password" placeholder="Contraseña" class="camposFormulario"><br>
+            <button class="camposFormulario">Ver que me contesta PHP</button>
+        </div>
+    </form>
+</div>
 </body>
 </html>
