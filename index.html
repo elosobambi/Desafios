@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Ejercicio 2</title>
+    <style>
+        #todo{
+            display: flex;
+            margin: 40px;
+        }
+        #parteDerecha{
+            flex-direction: column;
+            padding-left: 50px;
+
+        }
+        h1{
+            font-family: roboto;
+            font-size: 64px;
+            color: #0a2ff1;
+            margin: 0;
+        }
+        .paleta{
+            width: 20vh;
+        }
+        .puntuacion{
+            width: 15vh;
+        }
+        #primerTexto{
+            font-size:  32px;
+            font-family: roboto;
+            color: #04146c;
+        }
+        #segundoTexto{
+            font-size: 16px;
+            font-family: roboto;
+            color: #04146c;
+        }
+        #segundoTexto span{
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="todo">
+        <div>
+            <img src="./Recursos/D1E2-paleta.png" alt="paleta" class="paleta">
+        </div>
+            <div id="parteDerecha">
+                <h1>Coolorist</h1>
+                <p id="primerTexto">Una herramienta infaltable <br>
+                en tu kit de diseñadxr.</p>
+
+                    <div>
+                        <img src="./Recursos/D1E2-puntuacion.png" alt="puntuacion" class="puntuacion">
+                    </div>
+
+                <p id="segundoTexto"><span>#3 en Diseño Gráfico  |</span> Leer opiniones</p>
+            </div>
+    </div>
+
 </body>
 </html>
