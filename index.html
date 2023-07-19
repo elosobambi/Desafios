@@ -3,9 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>Ejercicio 3</title>
+    <style>
+        @font-face {
+            font-family: coolvetica;
+            src: url(./Recursos/coolvetica\ rg.otf);
+        }
+        .general{
+            width: 100%;
+        }
+        #comentarios{
+            display: flex;
+        }
+        .opiniones{
+            padding: 1em;
+            background-color: #eff2ff;
+            margin: 30px;
+            justify-content: space-evenly;
+            min-width: 25%;
+        }
+        .estrellas{
+            width: 30%;
+        }
+        header p{
+            font-family: coolvetica;
+            font-size: 120px;
+            margin: 0;
+            color: #0a2ff1;
+        }
+        header p span{
+            font-family: roboto;
+            font-size: 40px;
+            font-weight: lighter;
+            color: #04146c;
+        }
+    </style>
 </head>
 <body>
-    
+    <main>
+        <header class="general">
+            <p>¡Somos geniales!</p>
+            <p><span>No lo decimos nosotrxs, <strong>lo dicen nuestrxs usuarixs.</strong> ¿Aún no nos crees? ¡Compruébalo!</span></p>
+        </header>
+        <div class="general" id="comentarios">
+            <section class="opiniones">
+                <img src="./Recursos/D1E3-cincoestrellas.png" alt="estrellas" class="estrellas">
+                <p>José Perez, Argentina</p>
+                <span>El mejor gestor de paletas</span><br>
+                Fácil de usar y con excelentes resultados <br>
+                siempre. ¡Súper recomendable! Ut laoreet <br>
+                dolore magna aliquam erat volutpat. Ut <br>
+                wisi enim ad minim veniam, quis nostrud <br>
+                exerci wisi enim ad minim veniam.
+            </section>
+            <section class="opiniones">
+                <img src="./Recursos/D1E3-casicincoestrellas.png" alt="estrellas" class="estrellas">
+                <p>Federico González, Uruguay</p>
+                <span>Buenísima herramienta</span><br>
+                ¡Súper recomendable!  No les pongo 5 <br>
+                estrellas sólo porque no es gratis, ja. <br>
+                Lorem ipsum dolor sit amet, consectetuer <br>
+                adipiscing elit, sed diam nonummy nibh <br>
+                euismod tincidunt ut laoreet ert volutpat.
+            </section>
+            <section class="opiniones">
+                <img src="./Recursos/D1E3-cincoestrellas.png" alt="estrellas" class="estrellas">
+                <p>Lola Winner, Chile</p>
+                <span>Sin dudas, mi favorita</span> <br>
+                ¡Se ha vuelto indispensable! Crece cons-<br>
+                tantemente con el aporte de sus usuarios <br>
+                y sus combinaciones cromáticas alu-<br>
+                cinantes. ¡Súper recomendable! Ut laoreet <br>
+                dolore magna aliquam erat volutpat.
+            </section>
+        </div>
+    </main>
 </body>
 </html>
