@@ -1,0 +1,34 @@
+h1{
+    font-family: dongle;
+    font-weight: 700;
+    font-size: 60px;
+}
+.texto{
+    font-family: dongle;
+    font-size: 18px;
+    padding: 20px;
+}
+#naranja {
+    background-color: orange;
+    animation: desplazamiento 3s ease-in-out 1s;
+    position: relative;
+}
+#amarillo{
+    background-color: palegoldenrod;
+    animation: desplazamiento 3s ease-in-out 4s;
+    position: relative;
+}
+#rosa{
+    background-color: pink;
+    animation: desplazamiento 3s ease-in-out 7s;
+    position: relative;
+}
+
+@keyframes desplazamiento{
+    from{
+    left: 100%;
+    }
+    to{
+        left: 0;;
+    }
+}
