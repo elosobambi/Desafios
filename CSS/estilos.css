@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+}
+header{
+    background-image: url(../Recursos/fondo\ \(1\).jpg);
+    text-align: center;
+    background-size: 100%;
+    
+}
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    margin: 0;
+}
+header div h1{
+    color: black;
+    background-color: white;
+    mix-blend-mode: screen;
+    padding: 10px 5px;
+    border-radius: 10px;
+    font-family: roboto;
+    font-weight: 900;
+    font-size: 3em;
+}
+#subtitulo{
+    margin: 10px;
+}
+#subtitulo h5, .titulosImagen{
+    font-family: roboto;
+    font-size: 2em;
+    font-weight: 900;
+}
+.otro{
+    font-size: 20px ;
+    
+}
+#transicion{
+    position: relative;
+}
+#imagen{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+}
+#imagen img{
+    width: 100%;
+    height: 100%;
+}
+#texto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(195, 129, 195);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+#texto div{
+    margin: 10px;
+    padding-bottom: 246px;
+    padding-right: 200px;
+}
+
+#transicion:hover #imagen{
+    opacity: 1;
+}
+#transicion:hover #texto{
+    opacity: 1;
+}
