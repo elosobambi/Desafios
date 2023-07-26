@@ -1,0 +1,69 @@
+body{
+    text-align: center;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+h1{
+    font-family: mulish;
+    font-weight: bold;
+    font-size: 53px;
+    color: #3957f1;
+}
+#parteSuperior{
+    display: flex;
+}
+#parteInferior{
+    display: flex;
+}
+
+#prueba1, #prueba2, #prueba3, #prueba4{
+    padding: 20px;
+}
+#cuadro1, #cuadro2, #cuadro3, #cuadro4{
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    padding: 0px;
+    border: 0;
+}
+p{
+    padding-bottom: 20px;
+    font-family: mulish;
+    font-size: 28px;
+    color: #15163d;
+}
+
+@media (max-width: 992px) {
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #parteSuperior{
+        display: flex;
+    }
+    #parteInferior{
+        display: flex;
+    }
+
+}
+@media (max-width: 768px) {
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #parteSuperior{
+        display: flex;
+        flex-direction: column;
+    }
+    #parteInferior{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
