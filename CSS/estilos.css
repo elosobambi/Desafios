@@ -10,18 +10,21 @@ h1{
 }
 #naranja {
     background-color: orange;
-    animation: desplazamiento 3s ease-in-out 1s;
+    animation: desplazamiento 3s ease-in-out;
     position: relative;
+    left: 0;
 }
 #amarillo{
     background-color: palegoldenrod;
-    animation: desplazamiento 3s ease-in-out 4s;
+    animation: desplazamiento 3s ease-in-out 3s;
     position: relative;
+    left: 0;
 }
 #rosa{
     background-color: pink;
-    animation: desplazamiento 3s ease-in-out 7s;
+    animation: desplazamiento 3s ease-in-out 6s;
     position: relative;
+    left: 0;
 }
 
 @keyframes desplazamiento{
