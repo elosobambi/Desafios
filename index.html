@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>Document</title>
+    <style>
+        p{
+            margin: 0;
+            font-family: mulish italic;
+            font-size: 17px;
+            color: #04146c;
+            margin: 0;
+        }
+        span{
+            font-family: mulish;
+            font-weight: 600;
+            font-size: 24px;
+            margin:0;
+        }
+        input{
+            border-color: #8a9af1;
+            margin: 5px;
+            width: 40vh;
+            margin: 0;
+            margin-bottom: 5px;
+            margin-right: 5px;
+        }
+        button{
+            border-radius: 3px;
+            font-family: mulish;
+            font-weight: bold;
+            color: white;
+            background-color: #5974ff;
+            width: 100px;
+            margin-top: 5px;
+            border-color: #5974ff;
+        }
+        input checkbox{
+            font-family: mulish;
+        }
+    </style>
 </head>
 <body>
-    
+    <main class="d-flex justify-content-center align-items-center">
+        <div class="p-5">
+            <p><span>Correo Electrónico</span></p>
+            <input type="email">
+            <p>Nunca compartiremos tu dirección de correo electrónico con nadie</p>
+            <p><span>Contraseña</span></p>
+            <input type="password"><br>
+            <input type="checkbox" class="form-check-input"> Recordarme <br>
+            <button class="btn-primary">Enviar</button>
+        </div>
+    </main>
 </body>
 </html>
