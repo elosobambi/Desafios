@@ -1,0 +1,94 @@
+body{
+    text-align: center;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+h1{
+    font-family: mulish;
+    font-weight: bold;
+    font-size: 91px;
+    color: #0a2ff1;
+}
+#parteSuperior{
+    display: flex;
+}
+#parteInferior{
+    display: flex;
+}
+.espacio{
+    padding: 20px;
+}
+.textos{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    border-radius: 10px;
+}
+p{
+    margin: 0;
+    font-family: mulish;
+    font-size: 24px;
+    color: white;
+    padding-bottom: 10px;
+}
+span{
+    font-family: mulish;
+    font-weight: bold;
+    font-size: 48px;
+    color: white;
+}
+
+#texto1{
+    background-image: url(../Recursos/ProgramasInternacionales.png);
+}
+#texto2{
+    background-image: url(../Recursos/ParcticasProfesionales.png);
+}
+#texto3{
+    background-image: url(../Recursos/Becas.png);
+}
+#texto4{
+    background-image: url(../Recursos/CampusVirtual.png);
+}
+
+@media (max-width: 992px){
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    #parteSuperior{
+    display: flex;
+    flex-direction: column;
+    }
+    #parteInferior{
+    display: flex;
+    flex-direction: column;
+    }
+}
+@media (max-width: 768px){
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #parteSuperior{
+    display: flex;
+    flex-direction: column;
+    }
+    #parteInferior{
+    display: flex;
+    flex-direction: column;
+    }
+}
