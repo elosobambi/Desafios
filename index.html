@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora de Presupuesto</title>
 </head>
 <body>
-    
+    <script>
+        const ingresoTotal = parseFloat(prompt("Ingrese el ingreso total:"));
+
+        if (!isNaN(ingresoTotal)) {
+            const gastosNecesarios = ingresoTotal * 0.5;
+            const gastosOpcionales = ingresoTotal * 0.3;
+            const ahorroEInversion = ingresoTotal * 0.2;
+
+            document.write(`Monto para gastos necesarios: $${gastosNecesarios.toFixed(2)}<br>`);
+            document.write(`Monto para gastos opcionales: $${gastosOpcionales.toFixed(2)}<br>`);
+            document.write(`Monto para ahorro e inversión: $${ahorroEInversion.toFixed(2)}<br>`);
+        } else {
+            document.write("Ingrese un valor numérico válido para el ingreso total.");
+        }
+    </script>
 </body>
 </html>
