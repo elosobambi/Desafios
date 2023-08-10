@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Iniciar Sesión</title>
 </head>
 <body>
-    
+    <h1>Iniciar Sesión</h1>
+
+    <script>
+        // Solicitar usuario y clave
+        const usuarioIngresado = prompt("Ingrese su usuario:");
+        const claveIngresada = prompt("Ingrese su clave:");
+
+        // Validar credenciales
+        if (usuarioIngresado === "admin" && claveIngresada === "1234") {
+            document.write("<p>Bienvenido, has iniciado sesión correctamente.</p>");
+        } else {
+            document.write("<p>Credenciales incorrectas. No has iniciado sesión.</p>");
+        }
+    </script>
 </body>
 </html>
