@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Validación de Edad</title>
 </head>
 <body>
-    
+    <h1>Validación de Edad</h1>
+
+    <script>
+        // Solicitar la edad del usuario
+        const edad = parseInt(prompt("Ingrese su edad:"));
+
+        // Validar la edad y mostrar un mensaje
+        if (!isNaN(edad) && edad > 0) {
+            if (edad >= 18) {
+                document.write("<p>Bienvenido, eres mayor de 18 años.</p>");
+            } else {
+                document.write("<p>Lo siento, debes ser mayor de 18 años.</p>");
+            }
+        } else {
+            document.write("<p>Ingrese una edad válida.</p>");
+        }
+    </script>
 </body>
 </html>
