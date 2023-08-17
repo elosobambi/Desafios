@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flujo de Caja</title>
+    <script src="app.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Flujo de Caja</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Periodo</th>
+                <th>Ingreso</th>
+                <th>Egreso</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+    <h2>Resultado</h2>
+    <p id="result"></p>
 </body>
 </html>
