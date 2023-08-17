@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Intereses</title>
+</head>
+<body>
+    <h1>Calculadora de Intereses</h1>
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Capital</th>
+            <th>Plazo</th>
+            <th>Tasa</th>
+            <th>Interés</th>
+            <th>Fórmula</th>
+        </tr>
+    </table>
+    <p>Total Interés: <span id="totalInteres">0</span></p>
+    <script>
+        const planes = [
+            { nombre: 'Plan 001', capital: 150000, plazo: 30, tasa: 0.15 },
+            { nombre: 'Plan 002', capital: 300000, plazo: 180, tasa: 0.1 },
+            { nombre: 'Plan 003', capital: 485000, plazo: 60, tasa: 0.23 }
+        ];
+
+        function calcularInteres(plan) {
+            return plan.capital * plan.tasa;
+        }
+
+        function agregarInteresAPlanes(planesArray) {
+            return planesArray.map(plan => {
+                const interes = calcularInteres(plan);
+                return { ...plan, interes };
+            });
+        }
+
+        const planesConInteres = agregarInteresAPlanes(planes);
+
+        const tabla = document.querySelector('table');
+        const totalInteresSpan = document.getElementById('totalInteres');
+
+        let totalInteres = 0;
+
+        planesConInteres.forEach(plan => {
+            totalInteres += plan.interes;
+
+            const row = tabla.insertRow();
+            row.insertCell().textContent = plan.nombre;
+            row.insertCell().textContent = plan.capital;
+            row.insertCell().textContent = `${plan.plazo} días`;
+            row.insertCell().textContent = `${plan.tasa * 100}%`;
+            row.insertCell().textContent = plan.interes.toFixed(2);
+            row.insertCell().textContent = `${plan.capital} * ${plan.tasa} = ${plan.interes.toFixed(2)}`;
+        });
+
+        totalInteresSpan.textContent = totalInteres.toFixed(2);
+    </script>
+</body>
+</html>
